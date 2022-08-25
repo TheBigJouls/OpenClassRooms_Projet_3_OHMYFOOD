@@ -1,0 +1,159 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header, main, footer {
+  padding: 5%;
+}
+
+img {
+  width: 100%;
+}
+
+.img {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  background-color: #f6f6f6;
+  margin-top: -6em;
+  border-radius: 6em 6em 0 0;
+  z-index: 10;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: lighter;
+  position: relative;
+  padding-bottom: 10px;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  background-color: #99E2D0;
+  width: 60px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+}
+
+h3 {
+  font-size: 1.8em;
+  line-height: 0;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.fa-arrow-left {
+  font-size: 2em;
+  color: #353535;
+}
+
+.home {
+  color: #000000;
+  background-color: #f6f6f6;
+}
+
+.food {
+  color: #000000;
+}
+.food .nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.food .nav img {
+  margin: auto;
+  width: 40%;
+}
+.food .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.food .title i {
+  font-size: 2em;
+}
+.food .service {
+  margin-top: 3em;
+}
+.food .plat {
+  background-color: #fff;
+  padding: 0.5em 1em 0.5em 1em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.food .plat__prix {
+  align-self: flex-end;
+}
+
+.button {
+  text-align: center;
+  margin: 5em 0 5em 0;
+}
+.button a {
+  font-size: 1.5em;
+  color: #fff;
+  /* ff 3.6+ */
+  /* safari 5.1+,chrome 10+ */
+  /* opera 11.10+ */
+  /* ie 10+ */
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 50% 50%, #FF79DA 0%, #9356DC 77%);
+  box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.1);
+  margin: 2em;
+  padding: 1em 3em 1em 3em;
+  border-radius: 2em;
+}
+.button a:hover {
+  /* ff 3.6+ */
+  /* safari 5.1+,chrome 10+ */
+  /* opera 11.10+ */
+  /* ie 10+ */
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 50% 50%, #9356DC 0%, #FF79DA 77%);
+}
+
+footer {
+  color: #fff;
+  background-color: #353535;
+}
+footer h1 {
+  font-size: 1.5em;
+}
+footer p {
+  margin: 0.25em 0 0.25em 0;
+  font-weight: 400;
+}
+footer a {
+  color: #fff;
+  font-size: 1.5em;
+}
+footer .icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+footer .fa-handshake-angle::before {
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */
