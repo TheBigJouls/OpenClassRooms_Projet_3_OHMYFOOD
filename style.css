@@ -19,38 +19,39 @@ header, footer {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
+
 @-webkit-keyframes close {
   0% {
     opacity: 1;
-    transform: scale(100%);
+    transform: scale(1);
   }
   75% {
     opacity: 1;
   }
   99% {
-    transform: scale(100%);
+    transform: scale(1);
   }
   100% {
     opacity: 0;
-    transform: scale(0%);
+    transform: scale(0);
   }
 }
-/*@keyframes close {
+@keyframes close {
   0% {
     opacity: 1;
-    transform:scale(100%);
+    transform:scale(1);
   }
   75% {
     opacity: 1;
   }
   99% {
-    transform:scale(100%);
+    transform:scale(1);
   }
   100% {
     opacity: 0;
-    transform:scale(0%);
+    transform:scale(0);
   }
-}*/
+}
 
 .loader__anim {
   transform: scaleX(0);
