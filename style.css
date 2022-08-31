@@ -77,7 +77,7 @@ header, footer {
   background-color: #9356DC;
   overflow: hidden;
   position: absolute;
-  content: attr(chargement-titre);
+  content: attr(data-loading-text);
   -webkit-animation: chargement 4500ms;
           animation: chargement 4500ms;
 }
