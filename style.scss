@@ -79,22 +79,22 @@ header, footer {
         @keyframes close {
             0% { 
                 opacity:1;
-                transform: scale(100%);
+                transform:scale(100%);
             }
             75% {
                 opacity:1; 
             }
             99% {
-                transform: scale(100%);
+                transform:scale(100%);
             }
             100% {
                 opacity:0;
-                transform: scale(0%);
+                transform:scale(0%);
             }
           }
         &__anim
         {
-            transform: scaleX(0);
+            transform:scaleX(0);
             left: 50%;
             top: 50%;
             font-size: 5em;
@@ -105,7 +105,7 @@ header, footer {
             
             &:before {
                 color: $color-secondary;
-                content: attr(chargement-titre);
+                content: attr(data-loading-text);
             }
             
             &:after {
@@ -227,7 +227,7 @@ h2 {
         align-items: center;
         img {
             margin:auto;
-            width:20%;
+            width:20%;/*width:40% pour tablette et mobile*/
         }
     }
     &__adresse_et_resa {
@@ -456,7 +456,7 @@ h2 {
     
     .choix_plat {
         animation-name: container-fade-in;
-        transform: scaleX(1);
+        transform:scaleX(1);
         animation-duration: 3000ms;
         animation-fill-mode: both;
         animation-timing-function: cubic-bezier(.32,0,.07,1);
@@ -466,7 +466,7 @@ h2 {
 
     .choix_1 {
         animation-name: container-fade-in;
-        transform: scaleX(1);
+        transform:scaleX(1);
         animation-duration: 3000ms;
         animation-fill-mode: both;
         animation-timing-function: cubic-bezier(.32,0,.07,1);
@@ -475,7 +475,7 @@ h2 {
     }
     .choix_2 {
         animation-name: container-fade-in;
-        transform: scaleX(1);
+        transform:scaleX(1);
         animation-duration: 3000ms;
         animation-fill-mode: both;
         animation-timing-function: cubic-bezier(.32,0,.07,1);
@@ -484,7 +484,7 @@ h2 {
     }
     .choix_3 {
         animation-name: container-fade-in;
-        transform: scaleX(1);
+        transform:scaleX(1);
         animation-duration: 3000ms;
         animation-fill-mode: both;
         animation-timing-function: cubic-bezier(.32,0,.07,1);
@@ -506,7 +506,7 @@ h2 {
 
        
         &:hover > .check {
-            transform: scaleX(1);
+            transform:scaleX(1);
             .fa-circle-check {
             padding:0 2em 0 2em;
             transform: rotate(360deg);
@@ -562,7 +562,7 @@ h2 {
     }
     .check {
          transform-origin: right;
-        transform: scaleX(0);
+        transform:scaleX(0);
         transition: transform 1000ms cubic-bezier(.32,0,.07,1);
          display:flex;
         flex-direction: column;
@@ -656,6 +656,13 @@ footer {
 
 @media screen and (max-width: 1024px) { 
     .food {
+
+        &__logo {
+            img {
+                width:40%;
+            }
+        }
+
             .nav{
             align-items:center;
             a i {
