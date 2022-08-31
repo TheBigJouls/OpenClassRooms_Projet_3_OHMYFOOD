@@ -64,7 +64,7 @@ header, footer {
 }
 .loader__anim:before {
   color: #FF79DA;
-  content: attr(chargement-titre);
+  content: attr(data-loading-text);
 }
 .loader__anim:after {
   top: 0;
