@@ -657,12 +657,6 @@ footer {
 @media screen and (max-width: 1024px) { 
     .food {
 
-        &__logo {
-            img {
-                width:40%;
-            }
-        }
-
             .nav{
             align-items:center;
             a i {
@@ -693,6 +687,12 @@ footer {
 
 .home {
 
+    &__logo {
+        img {
+            width:40%;
+        }
+    }
+    
     &__adresse_et_resa {
         background-color: $bg-color-tertiary;
         padding: 0;
