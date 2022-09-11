@@ -153,6 +153,10 @@ h1 {
     font-family: $font-primary;
     font-size:3em;
 }
+.h1 {
+    font-family: $font-primary;
+    font-size:3em;
+}
 
 h2 {
     font-size:2em;
@@ -624,7 +628,7 @@ h2 {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        
+
         font-size:1.5em;
         color:$color-link-secondary;
         @include color-gradient-primary();
