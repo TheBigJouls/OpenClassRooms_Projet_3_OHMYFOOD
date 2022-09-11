@@ -19,40 +19,38 @@ header, footer {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-
 @-webkit-keyframes close {
   0% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(100%);
   }
   75% {
     opacity: 1;
   }
   99% {
-    transform: scale(1);
+    transform: scale(100%);
   }
   100% {
     opacity: 0;
-    transform: scale(0);
+    transform: scale(0%);
   }
 }
 @keyframes close {
   0% {
     opacity: 1;
-    transform:scale(1);
+    transform: scale(100%);
   }
   75% {
     opacity: 1;
   }
   99% {
-    transform:scale(1);
+    transform: scale(100%);
   }
   100% {
     opacity: 0;
-    transform:scale(0);
+    transform: scale(0%);
   }
 }
-
 .loader__anim {
   transform: scaleX(0);
   left: 50%;
@@ -78,7 +76,7 @@ header, footer {
   background-color: #9356DC;
   overflow: hidden;
   position: absolute;
-  content: attr(data-loading-text);
+  content: attr(chargement-titre);
   -webkit-animation: chargement 4500ms;
           animation: chargement 4500ms;
 }
@@ -113,10 +111,6 @@ header, footer {
 }
 
 h1 {
-  font-family: "Shrikhand", cursive;
-  font-size: 3em;
-}
-.h1 {
   font-family: "Shrikhand", cursive;
   font-size: 3em;
 }
@@ -189,7 +183,7 @@ p {
 }
 .home__logo img {
   margin: auto;
-  width: 20%;
+  width: 20%; /*width:40% pour tablette et mobile*/
 }
 .home__adresse_et_resa {
   background-color: #f6f6f6; /* background-color: $bg-color-tertiary en tablette et mobile */
@@ -342,13 +336,32 @@ p {
 .home__resto__bloc__card__infos {
   padding: 1em;
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  flex-direction: column;
   justify-content: space-between;
 }
+.home__resto__bloc__card__infos__contenu {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.home__resto__bloc__card__infos__contenu h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.home__resto__bloc__card__infos__contenu p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 2em;
+}
 .home__resto__bloc__card__infos .container_heart {
-  margin-right: 2em;
-  font-size: 3em;
+  margin-right: 0;
+  font-size: 1em;
+  width: 100%;
+  margin-bottom: 2em;
+  margin-top: 0;
 }
 
 .food {
@@ -544,6 +557,9 @@ p {
   margin: 2em 0 2em 0;
 }
 .button a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 1.5em;
   color: #fff;
   /* ff 3.6+ */
@@ -620,14 +636,13 @@ footer .fa-handshake-angle::before {
   .food .title {
     justify-content: space-between;
   }
+  .home__logo img {
+    width: 40%;
+  }
   .home__adresse_et_resa {
     background-color: #fff;
     padding: 0;
     flex-direction: column;
-  }
-
-  .home__logo img {
-    width: 40%;
   }
   .home__adresse {
     background-color: #EAEAEA;
@@ -652,7 +667,7 @@ footer .fa-handshake-angle::before {
   }
   .home__fonction__card {
     flex-direction: row;
-    width: 50%;
+    width: 70%;
   }
   .home__resto__bloc {
     flex-direction: column;
@@ -660,9 +675,20 @@ footer .fa-handshake-angle::before {
   .home__resto__bloc__card {
     width: 100%;
   }
+  .home__resto__bloc__card__infos {
+    flex-direction: row;
+  }
+  .home__resto__bloc__card__infos .container_heart {
+    width: 0;
+    font-size: 2em;
+    margin-right: 1em;
+  }
 }
 @media screen and (max-width: 768px) {
   .home__fonction__card {
+    width: 100%;
+  }
+  .home__resto__bloc__card {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

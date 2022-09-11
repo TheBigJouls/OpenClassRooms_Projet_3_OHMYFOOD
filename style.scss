@@ -387,13 +387,33 @@ h2 {
                 &__infos {
                     padding:1em;
                     display:flex;
-                    flex-direction: row;
-                    align-items: baseline;
+                    flex-direction: column;
                     justify-content:space-between;
-
+                    
+                    &__contenu  {  
+                        display:block;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        h3  {
+                           white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        p {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            padding-right:2em;
+                        }
+            
+                    }
                     .container_heart {
-                        margin-right:2em;
-                        font-size: 3em;
+                        margin-right:0;
+                        font-size: 1em;
+                        width:100%;
+                        margin-bottom:2em;
+                        margin-top:0;
                     }
                 }
             }
@@ -600,6 +620,11 @@ h2 {
     margin: 2em 0 2em 0;
    
     a {
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
         font-size:1.5em;
         color:$color-link-secondary;
         @include color-gradient-primary();
@@ -722,7 +747,7 @@ footer {
 
         &__card {
             flex-direction: row;
-            width:50%;
+            width:70%;
         }
     }
 
@@ -730,7 +755,20 @@ footer {
         &__bloc {
             flex-direction: column;
             &__card{
-                width: 50%;
+                width: 100%;
+            }
+        }
+
+        &__bloc {
+            &__card{
+               &__infos {
+                flex-direction: row;
+                .container_heart {
+                    width:0;
+                    font-size: 2em;
+                    margin-right:1em;
+                }
+               }
             }
         }
     }
@@ -747,11 +785,12 @@ footer {
                 width:100%;
             }
         }
-    }
+    
     &__resto {
         &__bloc {
             &__card{
                 width: 100%;
+                }
             }
         }
     }
